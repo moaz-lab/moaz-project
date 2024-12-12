@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Tips</title>
+</head>
+<body>
+    <header>
+        <a href="#"><img width="300px" src="img 2.png" alt="Travel Logo" class="logo"></a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu" id="menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="content">
+            <h1>Welcome to Travel Tips</h1>
+            <p>Your ultimate guide to hassle-free travel!</p>
+            <a href="#" class="btn">Explore Offers</a>
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>
+            We provide expert travel advice, tips, and destination guides to help you plan your perfect trip. Explore the world with confidence!
+        </p>
+    </section>
+
+    <section class="capitals" id="capitals">
+        <h2>Famous Capitals Around the World</h2>
+        <div class="capital-cards">
+            <div class="card" onclick="showDetails('Paris')">
+                <h3>Paris</h3>
+                <p>France</p>
+            </div>
+            <div class="card" onclick="showDetails('Tokyo')">
+                <h3>Tokyo</h3>
+                <p>Japan</p>
+            </div>
+            <div class="card" onclick="showDetails('Cairo')">
+                <h3>Cairo</h3>
+                <p>Egypt</p>
+            </div>
+            <div class="card" onclick="showDetails('New York')">
+                <h3>New York</h3>
+                <p>USA</p>
+            </div>
+        </div>
+    </section>
+    <section class="tips" id="tips">
+        <h2>Travel Tips & Tricks</h2>
+        <div class="tips-container">
+            <div class="tip-card">
+                <h3>1. Pack Smart</h3>
+                <p>Use packing cubes to organize your luggage and maximize space.</p>
+            </div>
+            <div class="tip-card">
+                <h3>2. Stay Safe</h3>
+                <p>Keep a digital copy of your passport and travel documents.</p>
+            </div>
+            <div class="tip-card">
+                <h3>3. Travel Light</h3>
+                <p>Pack versatile clothing that can be mixed and matched easily.</p>
+            </div>
+            <div class="tip-card">
+                <h3>4. Stay Connected</h3>
+                <p>Get a local SIM card or portable Wi-Fi device for better connectivity.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Fill out the form below, and we'll get back to you shortly.</p>
+        
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+            </div>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>    
+
+    <footer>
+        <p>&copy; 2024 Travel Tips. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
